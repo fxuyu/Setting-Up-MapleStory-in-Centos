@@ -13,6 +13,7 @@
 - 链接数据库的软件(Navicat8) 或者服务器安装phpmyadmin
 - 链接Linux的软件(putty or xshell)
 - 上传Linux的软件(FileZilla or winscp)
+- win7系统
 
 ## 开始
 首先要在centos服务器部署运行环境。<br>
@@ -64,6 +65,14 @@ bash start.sh
 ![截图3](https://github.com/fxuyu/Setting-Up-MapleStory-in-Centos/blob/master/image/3.png)
 
 然后需要在阿里云安全组设置安全组，要开放9595和7575，7576，7577，8600等端口<br>
+最后需要在客户端做如下步骤
+在079客户端下创建一个start.bat文件,bat文件写入如下
+```
+MapleStory.exe VPS的IP 9595
+```
+以后启动游戏就双击这个start.bat启动游戏<br>
+启动游戏后，如果白屏不能显示，把客户端根目录下的downloadinfo.dat 右键设置为隐藏<br>
+
 启动成功后，启动游戏。一般来说，不用注册，输入账号和密码必须要六位数以上，随便输入后。点击登陆就行。<br>
 
 # PS
